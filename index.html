@@ -4,12 +4,14 @@ title: wangbus.github.com
 ---
 
 <div>
-	<ul>
-		{% for post in site.posts %}
-		<li>
-			{{ post.date | date: "%B %e, %Y" }} <a href="{{ post.url }}">{{ post.title }}</a>
-			{{ post.content }}
-		</li>
-		{% endfor %}
-	</ul>
+  <div>
+    {% for post in site.posts %}
+    <div>
+      {{ post.date | date: "%B %e, %Y" }} <a href="{{ post.url }}">{{ post.title }}</a>
+    </div>
+    <div>
+      {{ post.content }}
+    </div>
+    {% endfor %}
+  </div>
 </div>
